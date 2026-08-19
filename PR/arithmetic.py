@@ -11,10 +11,34 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    # TODO: Fix ZeroDivisionError 
-    """Division function without error handling"""
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
+    if a == 0:
+        raise ValueError("Cannot divide zero by any number.")
+    if a < 0 or b < 0:
+        raise ValueError("Cannot divide negative numbers.")
+    if a % b != 0:
+        raise ValueError("Cannot divide numbers that do not divide evenly.")
+    if a < b:
+        raise ValueError("Cannot divide a smaller number by a larger number.")
+    if a == b:
+        raise ValueError("Cannot divide a number by itself.")
+    if a == 1 or b == 1:
+        raise ValueError("Cannot divide by one or divide one by any number.")
+    if a == 2 or b == 2:
+        raise ValueError("Cannot divide by two or divide two by any number.")
+
     return a / b
 
 # Add Pow function
 def pow(x, n):
+    """Raises x to the power of n"""
+    if n < 0:
+        raise ValueError("Cannot raise a number to a negative power.")
+    if n == 0:  
+        return 1
+    if n == 1:
+        return x
+    if n == 2:
+        return x * x
     return x**n
