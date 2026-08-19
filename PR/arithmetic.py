@@ -1,6 +1,6 @@
 def add(a, b):
+    """Adds two numbers"""
     return a + b
-
 
 def subtract(a, b):
     return a - b
@@ -28,3 +28,7 @@ def divide(a, b):
     if a == 2 or b == 2:
         raise ValueError("Cannot divide by two or divide two by any number.")
     return a / b
+
+# Add Pow function
+def pow(x, n):
+    return x**n
