@@ -41,3 +41,15 @@ def pow(x, n):
     if n == 2:
         return x * x
     return x**n
+
+def mod(a, b):
+    """Returns the modulus of a and b"""
+    if b == 0:
+        raise ValueError("Cannot perform modulus by zero.")
+    return a % b
+
+def sqrt(x):
+    """Returns the square root of x"""
+    if x < 0:
+        raise ValueError("Cannot take the square root of a negative number.")
+    return x ** 0.5
