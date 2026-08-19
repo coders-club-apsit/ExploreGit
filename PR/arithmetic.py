@@ -12,6 +12,7 @@ def multiply(a, b):
 
 def divide(a, b):
     # TODO: Fix ZeroDivisionError 
+    """Division function without error handling"""
     return a / b
 
 # Add Pow function
