@@ -31,4 +31,13 @@ def divide(a, b):
 
 # Add Pow function
 def pow(x, n):
+    """Raises x to the power of n"""
+    if n < 0:
+        raise ValueError("Cannot raise a number to a negative power.")
+    if n == 0:  
+        return 1
+    if n == 1:
+        return x
+    if n == 2:
+        return x * x
     return x**n
