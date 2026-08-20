@@ -1,4 +1,7 @@
-def add(a, b):
+from sys import exception
+
+
+def add(a, b)
     return a + b
 
 
@@ -13,5 +16,5 @@ def multiply(a, b):
 def divide(a, b):
     try:
         return a / b
-    except ZeroDivisionError:
-        return "Error: Division by zero is not allowed."
+    except exception as e:
+        print(f"Error: {e}")   
