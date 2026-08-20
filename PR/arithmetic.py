@@ -15,3 +15,6 @@ def divide(a, b):
         return a / b
     except ZeroDivisionError:
         return "Error: Division by zero is not allowed."
+
+def power(a,b):
+    return a**b
