@@ -1,4 +1,7 @@
-def add(a, b):
+from sys import exception
+
+
+def add(a, b)
     return a + b
 
 
@@ -11,7 +14,7 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    try:
-        return a / b
-    except ZeroDivisionError:
+    if (b == 0)
         return "Error: Division by zero is not allowed."
+    else
+        return a / b   
