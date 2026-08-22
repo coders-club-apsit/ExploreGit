@@ -1,7 +1,7 @@
 # Trigonometric functions will be added here
-
+import numpy as np
 def sin(x):
-    pass
+    np.sin(x)
 
 
 def cos(x):
