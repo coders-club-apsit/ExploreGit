@@ -14,7 +14,10 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    if (b == 0)
+    try:
+        return a / b
+    except ZeroDivisionError:
         return "Error: Division by zero is not allowed."
-    else
-        return a / b   
+
+def power(a,b):
+    return a**b
